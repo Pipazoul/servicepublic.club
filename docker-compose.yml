@@ -1,0 +1,10 @@
+services:
+  reparer-front:
+    profiles:
+      - "prod"
+    build:
+      context: ./reparer
+      dockerfile: Dockerfile
+      target: prod
+    ports:
+      - "8080:80"
