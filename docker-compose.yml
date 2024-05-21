@@ -6,5 +6,6 @@ services:
       context: ./reparer
       dockerfile: Dockerfile
       target: prod
+    image: yassinsiouda/reparer-front:latest
     ports:
       - "8080:80"
